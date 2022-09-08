@@ -49,8 +49,8 @@ torchrun --nnodes=1 --nproc_per_node=4 scripts/train.py run --config_file config
 ```
 training script in the MONAI 0.9.1 container on NVIDIA DGX-1 with (4x V100 32G) GPUs. Performance numbers (in volumes per second) were averaged over an entire training epoch.
 
-| Methods| Dimension | GPUs | Batch size / GPU | Fold 0 | Fold 1 | Fold 2 | Fold 3 | Fold 4 |
-|:------:|:---------:|:----:|:----------------:|:------:|:------:|:------:|:------:|:------:|
+| Methods| Dimension | GPUs | Batch size / GPU | Fold 0 | Fold 1 | Fold 2 | Fold 3 | Fold 4 | Avg ｜
+|:------:|:---------:|:----:|:----------------:|:------:|:------:|:------:|:------:|:------:|:---:|
 | SwinUNETR | 3 | 4 | 3 | 0.8111 | 0.8011 | 0.6712 | 0.6301 | 0.7239 | 0.7275 |
 | SegResNet | 3 | 4 | 3 | 0.8212 | 0.8115 | 0.6848 | 0.6377 | 0.7368 | 0.7384 |
 | DiNTS | 3 | 4 | 3 | 0.8058 | 0.7955 | 0.6880 | 0.6281 | 0.7008 | 0.7196 |
